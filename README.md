@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎵 MusicStream
 
-## Getting Started
+### A Modern Music Streaming Web App
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+A modern, fully responsive music streaming web application built using **Next.js 14**, **TypeScript**, **Redux Toolkit**, **TanStack Query**, and **shadcn/ui**, featuring real-time previews via the iTunes Search API.
+
+## 🔧 Setup & Installation
+
+### 1️⃣ Clone the Repository
+
+``` sh
+git clone git@github.com:VishalChoudhary/music-streaming-app.git
+cd music-streaming-app
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 2️⃣ Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a **.env.local** file in the project root:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    # iTunes API (Free + No Auth Required)
+    NEXT_PUBLIC_API_URL=https://itunes.apple.com/search
 
-## Learn More
+> ✔ The iTunes Search API is completely free and requires **no API
+> key**.
 
-To learn more about Next.js, take a look at the following resources:
+## 3️⃣ Run the Development Server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+``` sh
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Then open:
 
-## Deploy on Vercel
+http://localhost:3000
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features
+**Real music previews** from iTunes API  
+**Dark/Light mode toggle**  
+**Fully responsive design**  
+**Skeleton loading states**  
+**Infinite scroll** (pagination)  
+**Full Playback Controls** - Play, pause, next, previous, and seekbar  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+Next.js 14 (App Router) + TypeScript  
+Redux Toolkit - State management  
+TanStack Query - Data fetching  
+shadcn/ui + Tailwind CSS - UI components  
+iTunes Search API - Music data  
+
+## 📁 Project Structure
+
+    src
+    ├── app                   # Next.js App Router
+    ├── components
+    │   ├── ui                 # shadcn/ui components
+    │   ├── layout             # Header, Footer, ThemeToggle
+    │   ├── music              # Player, SongCard, ArtistCard
+    │   └── home               # Home page sections
+    ├── store                  # Redux store & slices
+    ├── hooks                  # Custom hooks (useSongs, usePlayer)
+    ├── lib                    # Utility functions & API calls
+    └── types/                 # TypeScript types
