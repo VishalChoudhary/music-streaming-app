@@ -50,7 +50,7 @@ TanStack Query - Data fetching
 shadcn/ui + Tailwind CSS - UI components  
 iTunes Search API - Music data  
 
-## 📁 Project Structure
+## Project Structure
 
     src
     ├── app                   # Next.js App Router
@@ -63,3 +63,10 @@ iTunes Search API - Music data
     ├── hooks                  # Custom hooks (useSongs, usePlayer)
     ├── lib                    # Utility functions & API calls
     └── types/                 # TypeScript types
+
+## Screenshot of Home + Player
+
+![alt text](<Screenshot 2025-11-20 120220.png>) <br><br>
+![alt text](<Screenshot 2025-11-20 120234.png>) <br><br>
+![alt text](<Screenshot 2025-11-20 120247.png>) <br><br>
+![alt text](<Screenshot 2025-11-20 120257.png>) 
